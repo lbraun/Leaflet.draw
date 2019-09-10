@@ -97,7 +97,7 @@ L.Edit.PolyVerticesEdit = L.Handler.extend({
 
 	},
 
-	// @method intialize(): void
+	// @method initialize(): void
 	initialize: function (poly, latlngs, options) {
 		// if touch, switch to touch icon
 		if (L.Browser.touch) {

@@ -7,7 +7,7 @@ L.EditToolbar.Delete = L.Handler.extend({
 		TYPE: 'remove' // not delete as delete is reserved in js
 	},
 
-	// @method intialize(): void
+	// @method initialize(): void
 	initialize: function (map, options) {
 		L.Handler.prototype.initialize.call(this, map);
 
@@ -103,7 +103,7 @@ L.EditToolbar.Delete = L.Handler.extend({
 	// @method revertLayers(): void
 	// Revert the deleted layers back to their prior state.
 	revertLayers: function () {
-		// Iterate of the deleted layers and add them back into the featureGroup
+		// Iterate over the deleted layers and add them back into the featureGroup
 		this._deletedLayers.eachLayer(function (layer) {
 			this._deletableLayers.addLayer(layer);
 			layer.fire('revert-deleted', {layer: layer});
@@ -117,9 +117,9 @@ L.EditToolbar.Delete = L.Handler.extend({
 	},
 
 	// @method removeAllLayers(): void
-	// Remove all delateable layers
+	// Remove all deletable layers
 	removeAllLayers: function () {
-		// Iterate of the delateable layers and add remove them
+		// Iterate over the deletable layers and remove them
 		this._deletableLayers.eachLayer(function (layer) {
 			this._removeLayer({layer: layer});
 		}, this);

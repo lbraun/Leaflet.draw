@@ -133,7 +133,7 @@ L.Draw.Event.EDITVERTEX = 'draw:editvertex';
  *
  * The type of edit this is. One of: `edit`
  *
- * Triggered when the user has finshed editing (edit mode) and saves edits.
+ * Triggered when the user has finished editing (edit mode) and saves edits.
  */
 L.Draw.Event.EDITSTOP = 'draw:editstop';
 

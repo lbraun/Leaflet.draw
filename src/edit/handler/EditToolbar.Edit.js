@@ -7,7 +7,7 @@ L.EditToolbar.Edit = L.Handler.extend({
 		TYPE: 'edit'
 	},
 
-	// @method intialize(): void
+	// @method initialize(): void
 	initialize: function (map, options) {
 		L.Handler.prototype.initialize.call(this, map);
 

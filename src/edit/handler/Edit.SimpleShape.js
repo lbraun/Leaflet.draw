@@ -23,7 +23,7 @@ L.Edit.SimpleShape = L.Handler.extend({
 		}),
 	},
 
-	// @method intialize(): void
+	// @method initialize(): void
 	initialize: function (shape, options) {
 		// if touch, switch to touch icon
 		if (L.Browser.touch) {

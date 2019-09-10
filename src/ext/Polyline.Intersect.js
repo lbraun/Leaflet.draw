@@ -5,7 +5,7 @@
 L.Polyline.include({
 
 	// @method intersects(): boolean
-	// Check to see if this polyline has any linesegments that intersect.
+	// Check to see if this polyline has any line segments that intersect.
 	// NOTE: does not support detecting intersection for degenerate cases.
 	intersects: function () {
 		var points = this._getProjectedPoints(),
